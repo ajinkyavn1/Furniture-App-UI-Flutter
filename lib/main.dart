@@ -106,14 +106,58 @@ class _MyHomePageState extends State<MyHomePage> {
                             height: 50,
                             width: 50,
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(15),
+                              borderRadius: BorderRadius.circular(25),
+                              border: Border.all(
+                                color: Colors.white
+                              ),
                               image:DecorationImage(
                                 image: AssetImage("assets/chris.jpg")
                               )
                             ),
-                          )
+
+                          ),
+                          SizedBox(
+                              width: MediaQuery.of(context).size.width - 120.0),
+                          Container(
+                            alignment: Alignment.topRight,
+                            child: IconButton(
+                              icon: Icon(Icons.menu),
+                              iconSize: 30,
+                              onPressed: (){},
+                              color: Colors.white,
+                            ),
+                          ),
+                          SizedBox(height: 15,)
                         ],
-                      )
+                      ),
+                      SizedBox(
+                        height: 50,
+                      ),
+                      Padding(
+                          padding: const EdgeInsets.only(left: 15),
+                        child: Text(
+                            "Hello Aj",
+                          style: TextStyle(
+                            fontFamily: 'Quicksand',
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 15),
+                        child: Text(
+                          "What Do you Want to Buy?",
+                          style: TextStyle(
+                              fontFamily: 'Quicksand',
+                              fontSize: 23,
+                              fontWeight: FontWeight.bold
+                          ),
+                        ),
+                      ),
                     ],
                   )
                 ],
