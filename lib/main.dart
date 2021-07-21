@@ -68,6 +68,18 @@ class _MyHomePageState extends State<MyHomePage> {
                     height: 250,
                     width: double.infinity,
                     color: Color(getColorHexFromStr("#FDD148")),
+                  ),
+                  Positioned(
+                    bottom: 50,
+                    right: 100,
+                    child: Container(
+                      height: 400,
+                      width: 400,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(200),
+                        color: Color(getColorHexFromStr("#FEE16D"))
+                      ),
+                    ),
                   )
                 ],
               )
