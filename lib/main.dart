@@ -1,5 +1,6 @@
 import 'dart:ffi';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -91,7 +92,29 @@ class _MyHomePageState extends State<MyHomePage> {
                           borderRadius: BorderRadius.circular(200),
                           color: Color(getColorHexFromStr("#FEE16D")).withOpacity(0.4)
                       ),
+
                     ),
+                  ),
+                  Column(
+                    children: <Widget>[
+                      SizedBox(height: 15,),
+                      Row(
+                        children:[
+                          SizedBox(width: 15,),
+                          Container(
+                            alignment: Alignment.topLeft,
+                            height: 50,
+                            width: 50,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15),
+                              image:DecorationImage(
+                                image: AssetImage("assets/chris.jpg")
+                              )
+                            ),
+                          )
+                        ],
+                      )
+                    ],
                   )
                 ],
               )
