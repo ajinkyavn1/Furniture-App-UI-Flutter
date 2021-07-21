@@ -96,6 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       SizedBox(height: 15,),
                       Row(
@@ -158,6 +159,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                         ),
                       ),
+
                     ],
                   )
                 ],
