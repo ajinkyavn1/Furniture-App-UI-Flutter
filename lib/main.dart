@@ -280,9 +280,15 @@ class _MyHomePageState extends State<MyHomePage> {
                     ],
                   )
                 ],
-              )
+              ),
+              // for(int i=0;i<10;i++)
+              itemCard("FinnNavin", 'assets/ottoman.jpg', false),
+              itemCard("Chair", 'assets/anotherchair.jpg', true),
+              itemCard("FinnNavin", 'assets/ottoman.jpg', true),
+              itemCard("Chair", 'assets/anotherchair.jpg', false),
             ],
-          )
+          ),
+
         ],
       ),
     );
