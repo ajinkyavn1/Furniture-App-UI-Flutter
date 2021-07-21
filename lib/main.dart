@@ -77,7 +77,19 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: 400,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(200),
-                        color: Color(getColorHexFromStr("#FEE16D"))
+                        color: Color(getColorHexFromStr("#FEE16D")).withOpacity(0.4)
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    bottom: 100,
+                    left: 150,
+                    child: Container(
+                      height: 300,
+                      width: 300,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(200),
+                          color: Color(getColorHexFromStr("#FEE16D")).withOpacity(0.4)
                       ),
                     ),
                   )
