@@ -32,6 +32,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  TabController controller;
   int getColorHexFromStr(String colorStr) {
     colorStr = "FF" + colorStr;
     colorStr = colorStr.replaceAll("#", "");
@@ -53,7 +54,19 @@ class _MyHomePageState extends State<MyHomePage> {
     }
     return val;
   }
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    //controller=new TabController(length: 4, vsync: this);
+  }
+  @override
+  void dispose() {
+    // TODO: implement dispose
+   // controller.dispose();//
+    super.dispose();
 
+  }
   @override
   Widget build(BuildContext context) {
 
@@ -92,7 +105,6 @@ class _MyHomePageState extends State<MyHomePage> {
                           borderRadius: BorderRadius.circular(200),
                           color: Color(getColorHexFromStr("#FEE16D")).withOpacity(0.4)
                       ),
-
                     ),
                   ),
                   Column(
@@ -115,8 +127,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                 image: AssetImage("assets/chris.jpg")
                               )
                             ),
-
                           ),
+
                           SizedBox(
                               width: MediaQuery.of(context).size.width - 120.0),
                           Container(
@@ -177,7 +189,9 @@ class _MyHomePageState extends State<MyHomePage> {
                                   hintText: 'Search',
                                   hintStyle: TextStyle(
                                       color: Colors.grey,
-                                      fontFamily: 'Quicksand'))),
+                                      fontFamily: 'Quicksand')
+                              )
+                          ),
                         ),
                       )
                     ],
